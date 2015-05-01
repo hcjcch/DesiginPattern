@@ -4,7 +4,7 @@ package com.hcjcch.designpattern.proxy;
 public class RealObject extends AbstractObject {
     @Override
     public void operation() {
-        //Ò»Ğ©²Ù×÷
-        System.out.println("Ò»Ğ©²Ù×÷");
+        //ä¸€äº›æ“ä½œ
+        System.out.println("ä¸€äº›æ“ä½œ");
     }
 }

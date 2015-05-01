@@ -1,16 +1,16 @@
 package com.hcjcch.designpattern.observesubject;
 
 public class ConcreteObserver implements Observer {
-    //¹Û²ìÕßµÄ×´Ì¬
+    //è§‚å¯Ÿè€…çš„çŠ¶æ€
     private String observerState;
-    
+
     @Override
     public void update(String state) {
         /**
-         * ¸üĞÂ¹Û²ìÕßµÄ×´Ì¬£¬Ê¹ÆäÓëÄ¿±êµÄ×´Ì¬±£³ÖÒ»ÖÂ
+         * æ›´æ–°è§‚å¯Ÿè€…çš„çŠ¶æ€ï¼Œä½¿å…¶ä¸ç›®æ ‡çš„çŠ¶æ€ä¿æŒä¸€è‡´
          */
         observerState = state;
-        System.out.println("×´Ì¬Îª£º"+observerState);
+        System.out.println("çŠ¶æ€ä¸ºï¼š"+observerState);
     }
 
 }

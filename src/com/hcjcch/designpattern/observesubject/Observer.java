@@ -2,8 +2,8 @@ package com.hcjcch.designpattern.observesubject;
 
 public interface Observer {
     /**
-     * ¸üĞÂ½Ó¿Ú
-     * @param state    ¸üĞÂµÄ×´Ì¬
+     * æ›´æ–°æ¥å£
+     * @param state    æ›´æ–°çš„çŠ¶æ€
      */
     public void update(String state);
 }

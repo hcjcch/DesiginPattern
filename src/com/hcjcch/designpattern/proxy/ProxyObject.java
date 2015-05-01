@@ -4,10 +4,10 @@ public class ProxyObject extends AbstractObject{
     RealObject realObject = new RealObject();
     @Override
     public void operation() {
-        //µ÷ÓÃÄ¿±ê¶ÔÏóÖ®Ç°¿ÉÒÔ×öÏà¹Ø²Ù×÷
-        System.out.println("before");        
-        realObject.operation();        
-        //µ÷ÓÃÄ¿±ê¶ÔÏóÖ®ºó¿ÉÒÔ×öÏà¹Ø²Ù×÷
+        //è°ƒç”¨ç›®æ ‡å¯¹è±¡ä¹‹å‰å¯ä»¥åšç›¸å…³æ“ä½œ
+        System.out.println("before");
+        realObject.operation();
+        //è°ƒç”¨ç›®æ ‡å¯¹è±¡ä¹‹åå¯ä»¥åšç›¸å…³æ“ä½œ
         System.out.println("after");
     }
 }

@@ -5,31 +5,31 @@ import java.util.List;
 
 public abstract class Subject {
     /**
-     * ÓÃÀ´±£´æ×¢²áµÄ¹Û²ìÕß¶ÔÏó
+     * ç”¨æ¥ä¿å­˜æ³¨å†Œçš„è§‚å¯Ÿè€…å¯¹è±¡
      */
     private List<Observer> list = new ArrayList<Observer>();
     /**
-     * ×¢²á¹Û²ìÕß¶ÔÏó
-     * @param observer    ¹Û²ìÕß¶ÔÏó
+     * æ³¨å†Œè§‚å¯Ÿè€…å¯¹è±¡
+     * @param observer    è§‚å¯Ÿè€…å¯¹è±¡
      */
     public void attach(Observer observer){
-        
+
         list.add(observer);
         System.out.println("Attached an observer");
     }
     /**
-     * É¾³ı¹Û²ìÕß¶ÔÏó
-     * @param observer    ¹Û²ìÕß¶ÔÏó
+     * åˆ é™¤è§‚å¯Ÿè€…å¯¹è±¡
+     * @param observer    è§‚å¯Ÿè€…å¯¹è±¡
      */
     public void detach(Observer observer){
-        
+
         list.remove(observer);
     }
     /**
-     * Í¨ÖªËùÓĞ×¢²áµÄ¹Û²ìÕß¶ÔÏó
+     * é€šçŸ¥æ‰€æœ‰æ³¨å†Œçš„è§‚å¯Ÿè€…å¯¹è±¡
      */
     public void nodifyObservers(String newState){
-        
+
         for(Observer observer : list){
             observer.update(newState);
         }

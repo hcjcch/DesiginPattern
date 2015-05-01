@@ -2,17 +2,17 @@
 package com.hcjcch.designpattern.observesubject;
 
 public class ConcreteSubject extends Subject{
-    
+
     private String state;
-    
+
     public String getState() {
         return state;
     }
 
     public void change(String newState){
         state = newState;
-        System.out.println("Ö÷Ìâ×´Ì¬Îª£º" + state);
-        //×´Ì¬·¢Éú¸Ä±ä£¬Í¨Öª¸÷¸ö¹Û²ìÕß
+        System.out.println("ä¸»é¢˜çŠ¶æ€ä¸ºï¼š" + state);
+        //çŠ¶æ€å‘ç”Ÿæ”¹å˜ï¼Œé€šçŸ¥å„ä¸ªè§‚å¯Ÿè€…
         this.nodifyObservers(state);
     }
 }

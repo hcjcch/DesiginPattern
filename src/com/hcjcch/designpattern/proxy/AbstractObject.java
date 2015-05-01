@@ -1,6 +1,6 @@
 package com.hcjcch.designpattern.proxy;
 
 public abstract class AbstractObject {
-    //²Ù×÷
+    //æ“ä½œ
     public abstract void operation();
 }
